@@ -7,7 +7,8 @@ public class Programa_002
 	public static void main(String[] args)
 	{
 		Programa_002 miPrograma = new Programa_002();
-		System.out.println(miPrograma.sumar(5,3));
+		int resultado = miPrograma.sumar(5,3);
+		System.out.println(resultado);
 	}
 
 }
