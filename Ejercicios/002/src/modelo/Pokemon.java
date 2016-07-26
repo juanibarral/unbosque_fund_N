@@ -17,7 +17,7 @@ public class Pokemon
 
 	public String toString()
 	{
-		return nombre + “ “ + pTipo + “ “ + pAtaque + “ “ + pDefensa;
+		return nombre + " " + tipo + " " + ataque + " " + defensa;
 	}
 
 }

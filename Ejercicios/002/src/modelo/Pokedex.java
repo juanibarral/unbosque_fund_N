@@ -12,9 +12,9 @@ public class Pokedex
 	{
 		nombre = pNombre;
 		activo = false;
-		pokemon1 = new Pokemon(“Pikachu”, 10, 15);
-		pokemon2 = new Pokemon(“Bulbazur”, 20, 25);
-		pokemon3 = new Pokemon(“Charmander”, 30, 35);
+		pokemon1 = new Pokemon("Pikachu", "Electrico", 10, 15);
+		pokemon2 = new Pokemon("Bulbazur", "Agua", 20, 25);
+		pokemon3 = new Pokemon("Charmander", "Fuego", 30, 35);
 	}
 
 	public void listPokemons()
