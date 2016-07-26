@@ -12,15 +12,18 @@ public class Pokedex
 	{
 		nombre = pNombre;
 		activo = false;
-		pokemon1 = new Pokemon("Pikachu", "Electrico", 10, 15);
-		pokemon2 = new Pokemon("Bulbazur", "Agua", 20, 25);
-		pokemon3 = new Pokemon("Charmander", "Fuego", 30, 35);
+		pokemon1 = new Pokemon("Squirtle", "Agua", 48, 65);
+		pokemon2 = new Pokemon("Bulbazur", "Planta", 49, 49);
+		pokemon3 = new Pokemon("Charmander", "Fuego", 52, 43);
 	}
 
-	public void listPokemons()
+	public String listarPokemones()
 	{
-		System.out.println(pokemon1.toString());
-		System.out.println(pokemon2.toString());
-		System.out.println(pokemon3.toString());
+		String lista = "";
+		lista += pokemon1.toString() + "\n";
+		lista += pokemon2.toString() + "\n";
+		lista += pokemon3.toString() + "\n";
+
+		return lista;
 	}
 }

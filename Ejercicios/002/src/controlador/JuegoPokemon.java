@@ -8,7 +8,8 @@ public class JuegoPokemon
 	public JuegoPokemon()
 	{
 		pokedex = new Pokedex("Ash Ketchum");
-		pokedex.listPokemons();
+		String lista = pokedex.listarPokemones();
+		System.out.println(lista);
 	}
 
 	public static void main(String[] args)
