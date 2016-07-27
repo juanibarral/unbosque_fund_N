@@ -6,7 +6,8 @@ public class Pokemon
 	private String tipo;
 	private int ataque;
 	private int defensa;
-	private int puntosDeVida;
+	private double puntosDeVida;
+	private int nivel;
 
 	public Pokemon(String pNombre, String pTipo, int pAtaque, int pDefensa)
 	{
@@ -15,6 +16,7 @@ public class Pokemon
 		ataque = pAtaque;
 		defensa = pDefensa;
 		puntosDeVida = 100;
+		nivel = 1;
 	}
 
 	public String toString()
@@ -22,4 +24,24 @@ public class Pokemon
 		return nombre + " " + tipo + " " + ataque + " " + defensa;
 	}
 
+	public void subirNivel()
+	{
+		nivel++;
+	}
+
+	public double calcularDanho(int pNivel, int pAtaque)
+	{
+		double danho = ((2 * pNivel + 10) / 250.0) * ((double)pAtaque / (double)defensa);
+		return danho;
+ 	}
+
+ 	public void actualizarVida(double danho)
+ 	{
+ 		puntosDeVida -= danho;
+ 	}
+
+ 	public double darPuntosDeVida()
+ 	{
+ 		return puntosDeVida;
+ 	}
 }

@@ -13,6 +13,15 @@ public class JuegoPokemon
 		interfaz = new InterfazPokemon();
 		String lista = pokedex.listarPokemones();
 		interfaz.imprimirEnConsola(lista);
+
+		pokedex.subirNivelPokemon1();
+
+		double puntos = pokedex.atacarPokemon1(1, 50);
+		interfaz.imprimirEnConsola("Vida Pokemon1: " + puntos);
+		puntos = pokedex.atacarPokemon2(1, 50);
+		interfaz.imprimirEnConsola("Vida Pokemon2: " + puntos);
+		puntos = pokedex.atacarPokemon3(1, 50);
+		interfaz.imprimirEnConsola("Vida Pokemon3: " + puntos);
 	}
 
 	public static void main(String[] args)

@@ -26,4 +26,30 @@ public class Pokedex
 
 		return lista;
 	}
+
+	public double atacarPokemon1(int nivel, int pAtaque)
+	{
+		double danho = pokemon1.calcularDanho(pAtaque);
+		pokemon1.actualizarVida(danho);
+		return pokemon1.darPuntosDeVida();
+	}
+
+	public double atacarPokemon2(int nivel, int pAtaque)
+	{
+		double danho = pokemon2.calcularDanho(pAtaque);
+		pokemon2.actualizarVida(danho);
+		return pokemon2.darPuntosDeVida();
+	}
+
+	public double atacarPokemon3(int nivel, int pAtaque)
+	{
+		double danho = pokemon3.calcularDanho(pAtaque);
+		pokemon3.actualizarVida(danho);
+		return pokemon3.darPuntosDeVida();
+	}
+
+	public void subirNivelPokemon1()
+	{
+		pokemon1.subirNivel();
+	}
 }
