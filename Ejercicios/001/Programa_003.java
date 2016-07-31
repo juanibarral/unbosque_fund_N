@@ -4,7 +4,7 @@ public class Programa_003
 	{
 		Sumadora miPrograma = new Sumadora();
 		int resultado = miPrograma.sumar(5,3);
-		System.out.println(resultado);
+		System.out.println("Resultado: " + resultado);
 	}
 
 }

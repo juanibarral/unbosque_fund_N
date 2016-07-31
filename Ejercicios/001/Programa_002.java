@@ -8,7 +8,7 @@ public class Programa_002
 	{
 		Programa_002 miPrograma = new Programa_002();
 		int resultado = miPrograma.sumar(5,3);
-		System.out.println(resultado);
+		System.out.println("Resultado: " + resultado);
 	}
 
 }
