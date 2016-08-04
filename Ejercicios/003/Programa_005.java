@@ -1,4 +1,10 @@
+package controlador;
+
+import modelo.*;
+import vista.*;
+
 public class Programa_005
+
 {
 	public static void main(String[] args)
 	{
