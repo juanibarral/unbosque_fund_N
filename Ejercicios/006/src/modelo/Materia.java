@@ -5,6 +5,11 @@ package modelo;
 public class Materia {
 	
 	// ****************************************************
+	// CONSTANTES
+	// ****************************************************
+	//TODO B1. Agregue las variables inmutables necesarias
+	//TODO B4. Agregue las constantes necesarias
+	// ****************************************************
 	// ATRIBUTOS
 	// ****************************************************
 	/**
@@ -23,6 +28,7 @@ public class Materia {
 	 * El tercer corte de la materia
 	 */
 	private Corte corte3;
+	//TODO B3. Agregue un nuevo atributo llamado tipoMateria de tipo entero
 	
 	// ****************************************************
 	// METODOS
@@ -101,6 +107,7 @@ public class Materia {
 	{
 		corte3.setNota(nota);
 	}
+	
 	/**
 	 * Retorna la nota final de la materia
 	 * @return nota final de la materia
@@ -122,7 +129,9 @@ public class Materia {
 	{
 		double notaActual = corte1.darNotaCorte() + corte2.darNotaCorte();
 		double notaNecesaria = (notaDeseada - notaActual) / corte3.getPorcentaje();
+		
+		//TODO B5. 
 		return notaNecesaria;
 	}
-	
+	//B2. Cree el método retornarMensajePorNotaFinal
 }

@@ -27,6 +27,7 @@ public class Corte {
 	public Corte(double pPorcentaje)
 	{
 		nota = 0;
+		//TODO A1 Agregue el código para que el procentaje sea valido.
 		porcentaje = pPorcentaje;
 	}
 	/**
@@ -35,6 +36,7 @@ public class Corte {
 	 */
 	public void setNota(double pNota)
 	{
+		//TODO A2 Agregue el código para que la nota que se actualiza sea valida. 
 		nota = pNota;
 	}
 	/**
