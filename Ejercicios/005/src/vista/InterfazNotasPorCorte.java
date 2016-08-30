@@ -18,7 +18,6 @@ public class InterfazNotasPorCorte extends JFrame{
 	public final static String CALCULAR_FINAL = "Calcular nota final";
 	public final static String CALCULAR_NECESARIA = "Calcular nota necesaria";
 	public final static String BORRAR = "Borrar";
-	private AplicacionNotasPorCorte controlador;
 	private JButton butCalcularFinal;
 	private JButton butCalcularNecesaria;
 	private JButton butBorrar;
@@ -35,7 +34,7 @@ public class InterfazNotasPorCorte extends JFrame{
 	
 	public InterfazNotasPorCorte(AplicacionNotasPorCorte pControlador)
 	{
-		controlador = pControlador;
+		
 		setSize(250, 250);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		

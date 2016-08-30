@@ -3,10 +3,8 @@ package controlador;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JOptionPane;
-
-import modelo.Materia;
 import modelo.Corte;
+import modelo.Materia;
 import vista.InterfazNotasPorCorte;
 
 public class AplicacionNotasPorCorte implements ActionListener{
@@ -37,7 +35,7 @@ public class AplicacionNotasPorCorte implements ActionListener{
 	
 	public static void main(String[] args)
 	{
-		AplicacionNotasPorCorte aplicacion = new AplicacionNotasPorCorte();
+		new AplicacionNotasPorCorte();
 	}
 
 
@@ -57,7 +55,7 @@ public class AplicacionNotasPorCorte implements ActionListener{
 				double notaFinal = materia.darNotaFinal();
 				interfaz.setNotaFinal(notaFinal);
 			} catch (Exception e) {
-				interfaz.mostrarExcepcion("Algunos de los campos no es un número");
+				interfaz.mostrarExcepcion("Algunos de los campos no son números");
 			}
 		}
 		else if(actionCommand.equals(InterfazNotasPorCorte.CALCULAR_NECESARIA))
